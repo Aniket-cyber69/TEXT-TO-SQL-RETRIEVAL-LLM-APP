@@ -1,12 +1,15 @@
 <h1>TEXT TO SQL RETRIEVAL</h1>
 <br>
 <p>This project is a simple and interactive application that takes English questions as input and generates corresponding SQL queries using Google Gemini. It also executes these queries on a SQLite database and displays the results.</p>
-
-<h3><b>Features Natural Language to SQL:</b></h3> Converts natural language questions into SQL queries using the Google Gemini generative AI model.
-<h3><b>Database Integration:</b></h3> Runs generated SQL queries on a SQLite database (student.db).
-<h3><b>Interactive Interface:</b> </h3>Built with Streamlit for a user-friendly, interactive experience.
 <br>
-<h2><b>Project Structure</b></h2>
+<h3>Features</h3>
+<ul>
+<li><b> Natural Language to SQL:</b>Converts natural language questions into SQL queries using the Google Gemini generative AI model.</li>
+<li><b>Database Integration:</b> Runs generated SQL queries on a SQLite database (student.db).</li>
+<li><b>Interactive Interface:</b> Built with Streamlit for a user-friendly, interactive experience.</li>
+</ul>
+<br>
+<h3>Project Structure</h3>
 app.py: The main application file. Contains the Streamlit interface and the logic for querying the database.
 sql.py: Script to set up the SQLite database (student.db) with a STUDENT table and sample records.
 Getting Started
