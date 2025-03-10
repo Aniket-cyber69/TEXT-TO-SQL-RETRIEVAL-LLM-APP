@@ -10,21 +10,13 @@
 </ul>
 <br>
 <h3>Project Structure</h3>
-app.py: The main application file. Contains the Streamlit interface and the logic for querying the database.
-sql.py: Script to set up the SQLite database (student.db) with a STUDENT table and sample records.
-Getting Started
-Prerequisites
-Python 3.7 or above
+<ul>
+<li><b>app.py:</b> The main application file. Contains the Streamlit interface and the logic for querying the database.</li>
+<li><b>sql.py:</b> Script to set up the SQLite database (student.db) with a STUDENT table and sample records.</li>
+</ul>
+<br>
+<h3>How It Works</h3>
 
-Install dependencies:
-pip install -r requirements.txt
-Set up the .env file to include your Google Gemini API key:
-GOOGLE_API_KEY=your_google_api_key
-Run the sql.py script to set up the SQLite database:
-python sql.py
-Start the Streamlit application:
-streamlit run app.py
-How It Works
-Input your natural language question into the Streamlit app.
-The app sends the question and a predefined prompt to Google Gemini.
-Google Gemini generates an SQL query based on the input question. The app executes the SQL query on the STUDENT table in student.db. Results are displayed directly on the app. Example Usage Input: "How many students are in the Data Science class?" Generated SQL Query: SELECT * FROM STUDENT WHERE CLASS = 'Data Science'; Result: Displays rows matching the query.# TEXT-TO-SQL-RETRIEVAL-LLM-APP
+<p>Input your natural language question into the Streamlit app.</p>
+<p>The app sends the question and a predefined prompt to Google Gemini.</p>
+<p>Google Gemini generates an SQL query based on the input question. The app executes the SQL query on the STUDENT table in student.db. Results are displayed directly on the app. Example Usage Input: "How many students are in the Data Science class?" Generated SQL Query: SELECT * FROM STUDENT WHERE CLASS = 'Data Science'; Result: Displays rows matching the query.# TEXT-TO-SQL-RETRIEVAL-LLM-APP</p>
